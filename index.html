@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <h1>Sky Scouter</h1>
+            <h4>Give location for weather details!</h4>
+            <div class="search-box">
+                <input type="text" class="city-input" placeholder="Enter city name">
+                <button class="city-input-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <button id="geolocation-btn" class="geolocation-btn"><i class="fas fa-map-marker-alt"></i> Use My Location</button>
+            <div id="weather-info" class="animate__animated">
+                <h2 id="city-name"></h2>
+                <img id="weather-icon" src="https://cdn-icons-png.flaticon.com/128/2932/2932445.png" alt="Weather Icon">
+                <p id="temperature" class="temperature"></p>
+                <p id="description" class="description"></p>
+                <div class="weather-details">
+                    <div class="detail">
+                        <i class="fas fa-tint"></i>
+                        <span id="humidity"></span>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-wind"></i>
+                        <span id="wind-speed"></span>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span id="pressure"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="forecast" class="forecast"></div>
+        </div>
+    </div>
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
