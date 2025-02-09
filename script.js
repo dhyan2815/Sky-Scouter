@@ -1,7 +1,5 @@
-import WEATHER_API_KEY from "./config";
-
 // API key for OpenWeatherMap (replace with your own)
-const API_KEY = WEATHER_API_KEY;
+const API_KEY = "60d79498a70e5a4e54bc7620b6914ee0"
 const WEATHER_API_URL = 'https://api.openweathermap.org/data/2.5/weather';
 const FORECAST_API_URL = 'https://api.openweathermap.org/data/2.5/forecast';
 
